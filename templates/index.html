@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex items-center justify-center">
+        <img src="/static/logo.png">
+    </div>
+     <div class="text-center p-10">
+         <p class="text-xl font-mono text-green-400">Hello,I am an application intended for the alignment of texts</p>
+     </div>
+    <form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data" class="shadow-md  p-10 m-6 border  border-gray-200">
+        <div class="flex  flex-wrap justify-center gap-10">
+            <div class=" text-center  bg-gradient-to-r from-green-500 p-3 px-5 to-green-100 rounded-md   cursor-pointer hover:bg-gray-800 ">
+                <input type="file" id="fileFr" name="fileFr" accept=".txt" class="h-1 hidden cursor-pointer">
+                <label for="fileFr" class="text-gray-200  cursor-pointer font-semibold text-lg"> 
+                   <div class="flex justify-center items-center">
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                    <svg version="1.1" width="50" height="50" fill="#fff" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 512.056 512.056" style="enable-background:new 0 0 512.056 512.056;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M426.635,188.224C402.969,93.946,307.358,36.704,213.08,60.37C139.404,78.865,85.907,142.542,80.395,218.303
+                                    C28.082,226.93-7.333,276.331,1.294,328.644c7.669,46.507,47.967,80.566,95.101,80.379h80v-32h-80c-35.346,0-64-28.654-64-64
+                                    c0-35.346,28.654-64,64-64c8.837,0,16-7.163,16-16c-0.08-79.529,64.327-144.065,143.856-144.144
+                                    c68.844-0.069,128.107,48.601,141.424,116.144c1.315,6.744,6.788,11.896,13.6,12.8c43.742,6.229,74.151,46.738,67.923,90.479
+                                    c-5.593,39.278-39.129,68.523-78.803,68.721h-64v32h64c61.856-0.187,111.848-50.483,111.66-112.339
+                                    C511.899,245.194,476.655,200.443,426.635,188.224z"/>
+                                <path d="M245.035,253.664l-64,64l22.56,22.56l36.8-36.64v153.44h32v-153.44l36.64,36.64l22.56-22.56l-64-64
+                                    C261.354,247.46,251.276,247.46,245.035,253.664z"/>
+                            </g>
+                        </g>
+                    </g>
+                    </svg>
+                  </div>
+                  </label>
+
+                  <p class="text-xm text-green-700" id="fileNameFr">Fr</p>
+                
+            </div>
+
+            
+
+            <div class=" text-center  bg-gradient-to-r from-red-500 p-3 px-5 to-red-100 rounded-md   cursor-pointer hover:bg-gray-800 ">
+                <input type="file" id="fileAr" name="fileAr" accept=".txt" class=" h-1 hidden cursor-pointer">
+                <label for="fileAr" class="text-gray-200  cursor-pointer font-semibold text-lg">
+                    <div class="flex justify-center items-center">
+                        <?xml version="1.0" encoding="iso-8859-1"?>
+                        <svg version="1.1" width="50" height="50" fill="#fff" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.056 512.056"
+                            style="enable-background:new 0 0 512.056 512.056;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <g>
+                                        <path d="M426.635,188.224C402.969,93.946,307.358,36.704,213.08,60.37C139.404,78.865,85.907,142.542,80.395,218.303
+                                                C28.082,226.93-7.333,276.331,1.294,328.644c7.669,46.507,47.967,80.566,95.101,80.379h80v-32h-80c-35.346,0-64-28.654-64-64
+                                                c0-35.346,28.654-64,64-64c8.837,0,16-7.163,16-16c-0.08-79.529,64.327-144.065,143.856-144.144
+                                                c68.844-0.069,128.107,48.601,141.424,116.144c1.315,6.744,6.788,11.896,13.6,12.8c43.742,6.229,74.151,46.738,67.923,90.479
+                                                c-5.593,39.278-39.129,68.523-78.803,68.721h-64v32h64c61.856-0.187,111.848-50.483,111.66-112.339
+                                                C511.899,245.194,476.655,200.443,426.635,188.224z" />
+                                        <path d="M245.035,253.664l-64,64l22.56,22.56l36.8-36.64v153.44h32v-153.44l36.64,36.64l22.56-22.56l-64-64
+                                                C261.354,247.46,251.276,247.46,245.035,253.664z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </label>
+            
+                <p class="text-xm text-green-700" id="fileNameAr">Ar</p>
+            
+            </div>
+         
+        </div>
+        <div class="p-10 flex flex-wrap  gap-10 justify-evenly">
+            <button type="submit" id="alg" class="px-8 py-3 font-mono border border-green-300  text-green-700 hover:bg-green-600 hover:text-white" >Start processing</button>
+        </div>
+
+    </form>
+     <a id="IdHref" href="ALigment.html" hidden="true" ></a>
+<script>
+    //to show name of the selected file
+    var inputFr = document.getElementById( 'fileFr' );
+    var inputAr = document.getElementById( 'fileAr' );
+
+    var infoAreaFr = document.getElementById( 'fileNameFr' );
+    var infoAreaAr = document.getElementById( 'fileNameAr' );
+
+    inputFr.addEventListener('change', showFileNameFR );
+    inputAr.addEventListener('change', showFileNameAR );
+
+    function showFileNameFR( event) {
+      var inputFr = event.srcElement;
+      var fileNameFr = inputFr.files[0].name;
+      infoAreaFr.textContent = fileNameFr;
+    }
+    function showFileNameAR( event) {
+      var inputAr = event.srcElement;
+      var fileNameAr = inputAr.files[0].name;
+      infoAreaAr.textContent = fileNameAr;
+    }
+</script>
+</body>
+</html>
